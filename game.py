@@ -30,12 +30,13 @@ class Player:
     return self._id
 
   def move(self, direction):
+    direction = int(direction)
     if direction == 0:
-      self._y += 1
+      self._y -= 1
     if direction == 1:
       self._x += 1
     if direction == 2:
-      self._y -= 1
+      self._y += 1
     if direction == 3:
       self._x -= 1
 
